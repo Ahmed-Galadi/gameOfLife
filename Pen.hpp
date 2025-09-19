@@ -1,15 +1,18 @@
 #pragma once
 
 #include <vector>
-#include <map>
+#include <set>
 #include <string>
 
 class Pen {
 	private:
-		std::map<int, int> aliveCells;
-	
-	public:
-		Pen(const std::string &penMov);
+		std::set<std::pair<int, int>> aliveCells;
+		int width;
+		int height;
 
-		void draw(std::vector<std::vector<bool>> &canvas);
+		void	getAlivePos(int x, int y,bool isDown);
+	public:
+		Pen(const std::string &penMov, int width, int height);
+
+		void draw(std::vector<std::string> &canvas);
 };
