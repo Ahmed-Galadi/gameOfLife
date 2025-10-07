@@ -4,7 +4,7 @@
 #include <string>
 #include "Pen.hpp"
 
-#define LIVE 'o'
+#define LIVE 'O'
 #define DEAD '.'
 #define RED "\e[31m"
 #define GREEN "\e[32m"

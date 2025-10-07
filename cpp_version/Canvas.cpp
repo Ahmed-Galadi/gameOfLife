@@ -58,18 +58,12 @@ void Canvas::printSimulation(const std::vector<std::string> &output) {
 				color = GREEN;
 			std::cout << color <<output[y][x] << RST ;
 		}
-		std::cout << "\n";
+		std::cout << std::endl;
 	}
     
-    // Optional: flush the output to ensure it displays immediately
     std::cout << std::flush;
 	usleep(500000);
 }
-/*void Canvas::printSimulation(const std::vector<std::string> &output) {*/
-/*	for (int y = 0; y < height; y++)*/
-/*		std::cout << output[y] << "\n";*/
-/*	std::cout << "\033[2J\033[H";*/
-/*}*/
 
 void	Canvas::simulate(int iterations) {
 
